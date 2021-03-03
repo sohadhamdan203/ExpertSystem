@@ -1,0 +1,18 @@
+﻿
+
+{% block content %}
+<h2>{{ title }}</h2> 
+{% if fact_list %}
+  
+{% for fact in fact_list %}
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">{{fact.type}} </label><br>
+  <input type="submit" value="Submit">
+
+{% endfor %}
+{% endif %}
+
+{% endblock %}   
+
+	                    
+
